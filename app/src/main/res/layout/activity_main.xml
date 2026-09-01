@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TeleSync"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSelectFolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ফোল্ডার বাছাই করুন" />
+
+        <TextView
+            android:id="@+id/tvFolderPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="কোনো ফোল্ডার বাছাই করা হয়নি"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etBotToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telegram Bot Token"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etChatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Chat ID"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="সিঙ্ক ইন্টারভাল (মিনিট, সর্বনিম্ন ১৫)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="সেটিংস সেভ করুন" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="অটো সিঙ্ক" />
+
+            <Switch
+                android:id="@+id/switchAutoSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSyncNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="এখনই সিঙ্ক করুন" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>
